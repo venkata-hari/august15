@@ -21,42 +21,40 @@
                 <a style="color:white;">Independence</a>
                 <a style="color:green">Day</a>
             </p>
-        </center>
 
+            <br>
+            <figcaption>
 
-        <div id=div></div>
-    </section>
-    <section id=s2>
-        <figcaption>
-            <center>
                 <a style="color:white;font-weight: 800;">Follow Us</a><br>
                 <a href="https://www.facebook.com/programmer.me1" class="fa fa-facebook">
                 </a>
                 <a href="https://www.twitter.com/iharicharan" class="fa fa-twitter"></a>
                 <a href="https://www.instagram.com/technologyjokes" class="fa fa-instagram"></a>
-            </center>
-        </figcaption>
-    </section>
-    <script>
-        var button = document.getElementById("button");
-        button.onclick = function() {
-            var person = prompt("Enter Your Name");
-            if (person != null) {
-                document.getElementById("p").innerHTML = " " + person;
-                document.getElementsByClassName("button")[0].style.display = "none"
-                document.getElementById("s1").style.display = "block"
-                document.getElementById("body").style.backgroundColor = "#91c749"
-                document.getElementById("s2").style.display = "block"
-            }
-            if (person == "") {
-                alert("please enter name");
-                document.getElementsByClassName("button")[0].style.display = "block"
-                document.getElementById("s1").style.display = "none"
-                document.getElementById("body").style.backgroundColor = "white"
-                document.getElementById("s2").style.display = "none"
 
-            }
-        }
+            </figcaption>
+        </center>
+    </section>
+
+
+
+    <center>
+        <footer id=s3>
+
+            <a class=share>share</a>
+            <a class="fa fa-facebook" href="https://www.facebook.com/sharer.php?u= https://iharicharan.github.io/august15/" onclick="window.open(this.href, 'windowName', 'width=550, height=650, left=24, top=24, scrollbars, resizable'); return false;" rel="nofollow">
+                <side>Facebook</side>
+            </a>
+            <a class="fa fa-twitter" href="https://twitter.com/share?url=https://iharicharan.github.io/august15/&amp;text=I sent you a special one. If you want to see it, open this link once" onclick="window.open(this.href, 'windowName', 'width=550, height=450, left=24, top=24, scrollbars, resizable'); return false;"
+                rel="nofollow">
+                <side>Twitter</side>
+            </a>
+            <a class="fa fa-whatsapp" href="https://web.whatsapp.com/send?text=*I sent you a special one. If you want to see it, open this link once*.👉 | https://iharicharan.github.io/august15/" onclick="window.open(this.href, 'windowName', 'width=900, height=550, left=24, top=24, scrollbars, resizable'); return false;"
+                rel="nofollow">
+                <side>Whatsapp</side>
+            </a>
+        </footer>
+    </center>
+    <script src="index.js">
     </script>
 </body>
 
