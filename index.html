@@ -12,30 +12,32 @@
         <h3 id=p><big></big></h3>
     </center>
     <section id=s1>
+        <center>
+            <p id=p1>
 
-        <div>
-            <center>
-                <p id=p1>
+                <a style="color:rgb(235, 106, 0)">Happy</a>
+                <a style="color:white;">Independence</a>
+                <a style="color:green">Day</a>
+            </p>
 
-                    <a style="color:rgb(235, 106, 0)">Happy</a>
-                    <a style="color:white;">Independence</a>
-                    <a style="color:green">Day</a>
-                </p>
+            <br>
 
-                <br>
-                <figcaption>
-
-                    <a style="color:white;font-weight: 800;">Follow Us</a><br>
-                    <a href="https://www.facebook.com/programmer.me1" class="fa fa-facebook">
-                    </a>
-                    <a href="https://www.twitter.com/iharicharan" class="fa fa-twitter"></a>
-                    <a href="https://www.instagram.com/technologyjokes" class="fa fa-instagram"></a>
-
-                </figcaption>
-            </center>
+        </center>
         </div>
     </section>
+    <section id=s2>
+        <center>
+            <figcaption>
 
+                <a style="color:white;font-weight: 800;">Follow Us</a><br>
+                <a href="https://www.facebook.com/programmer.me1" class="fa fa-facebook">
+                </a>
+                <a href="https://www.twitter.com/iharicharan" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/technologyjokes" class="fa fa-instagram"></a>
+
+            </figcaption>
+        </center>
+    </section>
 
 
     <center>
@@ -49,13 +51,34 @@
                 rel="nofollow">
                 <side>Twitter</side>
             </a>
-            <a class="fa fa-whatsapp" href="https://web.whatsapp.com/send?text=*I sent you a special one. If you want to see it, open this link once*.👉 | https://iharicharan.github.io/august15/" onclick="window.open(this.href, 'windowName', 'width=900, height=550, left=24, top=24, scrollbars, resizable'); return false;"
+            <a class="fa fa-whatsapp" href="https://www.whatsapp.com/send?text=*I sent you a special one. If you want to see it, open this link once*.👉 | https://iharicharan.github.io/august15/" onclick="window.open(this.href, 'windowName', 'width=900, height=550, left=24, top=24, scrollbars, resizable'); return false;"
                 rel="nofollow">
                 <side>Whatsapp</side>
             </a>
         </footer>
     </center>
-    <script src="index.js">
+    <script>
+        var button = document.getElementById("button");
+        button.onclick = function() {
+            var person = prompt("Enter Your Name");
+            if (person != null) {
+                document.getElementById("p").innerHTML = " " + person;
+                document.getElementsByClassName("button")[0].style.display = "none"
+                document.getElementById("s1").style.display = "block"
+                document.getElementById("body").style.backgroundColor = "#91c749"
+                document.getElementById("s2").style.display = "block"
+                document.getElementById("s3").style.display = "block"
+            }
+            if (person == "") {
+                alert("please enter name");
+                document.getElementsByClassName("button")[0].style.display = "block"
+                document.getElementById("s1").style.display = "none"
+                document.getElementById("body").style.backgroundColor = "white"
+                document.getElementById("s2").style.display = "none"
+                document.getElementById("s3").style.display = "none"
+
+            }
+        }
     </script>
 </body>
 
